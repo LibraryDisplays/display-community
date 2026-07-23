@@ -213,8 +213,9 @@ input[type="text"] {
 
 .pinterest-grid {
 
-    columns:3;
-    column-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:25px;
 
 }
 
