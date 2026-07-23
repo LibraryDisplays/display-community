@@ -611,3 +611,66 @@ label {
     right:10px;
 
 }
+
+/* FINAL HOMEPAGE CAROUSEL FIX */
+
+
+.carousel-wrapper {
+
+    position:relative;
+    display:flex;
+    align-items:center;
+
+}
+
+
+
+.display-carousel {
+
+    display:flex !important;
+    flex-direction:row !important;
+    gap:25px;
+    overflow:hidden !important;
+    width:100%;
+
+}
+
+
+
+.carousel-card {
+
+    flex:0 0 260px;
+
+}
+
+
+
+.carousel-button {
+
+    top:50%;
+    transform:translateY(-50%);
+
+}
+
+
+
+.carousel-button.left {
+
+    left:10px;
+
+}
+
+
+.carousel-button.right {
+
+    right:10px;
+
+}
+
+
+
+.carousel-card .display-image {
+
+    height:320px;
+
+}
