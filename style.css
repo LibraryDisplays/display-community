@@ -1213,3 +1213,7 @@ grid-template-columns:1fr;
 
 
 }
+
+.display-detail-page {
+    background:red !important;
+}
