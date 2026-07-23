@@ -674,3 +674,77 @@ label {
     height:320px;
 
 }
+
+/* HOMEPAGE CAROUSEL DISPLAY CARDS */
+
+
+.carousel-card {
+
+    flex:0 0 260px;
+    overflow:hidden;
+    border-radius:20px;
+
+}
+
+
+.carousel-card a {
+
+    text-decoration:none;
+
+}
+
+
+.carousel-card .display-image {
+
+    height:320px;
+    width:260px;
+
+    background:#ddd;
+
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+.carousel-card .overlay {
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,0.55);
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    flex-direction:column;
+
+    padding:20px;
+
+    opacity:0;
+
+    transition:.3s;
+
+}
+
+
+.carousel-card .display-image:hover .overlay {
+
+    opacity:1;
+
+}
+
+
+.carousel-card .overlay h3 {
+
+    color:white;
+    font-size:22px;
+    text-align:center;
+
+}
