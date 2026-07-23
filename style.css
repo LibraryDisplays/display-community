@@ -436,3 +436,76 @@ label {
 
 
 }
+
+/* HOMEPAGE CAROUSELS */
+
+
+.homepage-section {
+
+    max-width:1200px;
+    margin:50px auto;
+    padding:0 30px;
+
+}
+
+
+
+.section-header {
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+
+.section-header a {
+
+    color:#315c4c;
+    font-weight:bold;
+    text-decoration:none;
+
+}
+
+
+
+.display-carousel {
+
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    padding:20px 5px;
+
+}
+
+
+
+.display-carousel::-webkit-scrollbar {
+
+    height:8px;
+
+}
+
+
+
+.carousel-card {
+
+    min-width:260px;
+    flex-shrink:0;
+
+}
+
+
+
+.carousel-image {
+
+    height:320px;
+    background:#ddd;
+    border-radius:20px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
