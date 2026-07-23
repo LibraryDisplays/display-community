@@ -96,3 +96,58 @@ button {
     border-radius:20px;
 
 }
+
+.display-page {
+    max-width: 900px;
+    margin: auto;
+    padding: 30px;
+}
+
+
+.hero-image {
+    height: 300px;
+    background-color: #ddd;
+    border-radius: 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    margin-bottom:30px;
+}
+
+
+.info-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:20px;
+}
+
+
+.info-box {
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+.reactions {
+    display:flex;
+    gap:15px;
+    margin:20px 0;
+}
+
+
+.reactions button {
+    cursor:pointer;
+}
+
+
+.tag {
+    background:#315c4c;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    display:inline-block;
+    margin:5px;
+}
