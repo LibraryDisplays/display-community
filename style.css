@@ -32,3 +32,67 @@ section {
     margin:15px;
     box-shadow:0px 4px 10px rgba(0,0,0,0.1);
 }
+
+.search-section {
+    text-align:center;
+}
+
+
+input {
+    width:60%;
+    padding:15px;
+    border-radius:30px;
+    border:1px solid #ccc;
+    font-size:18px;
+}
+
+
+.display-row {
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+}
+
+
+.display-row .card {
+    min-width:250px;
+}
+
+
+.tags {
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+
+.tags span {
+
+    background:#315c4c;
+    color:white;
+    padding:10px 18px;
+    border-radius:25px;
+
+}
+
+
+button {
+
+    background:#315c4c;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:25px;
+    font-size:16px;
+
+}
+
+
+.submit {
+
+    text-align:center;
+    background:white;
+    margin:30px;
+    border-radius:20px;
+
+}
