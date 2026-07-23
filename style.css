@@ -439,7 +439,6 @@ label {
 
 /* HOMEPAGE CAROUSELS */
 
-
 .homepage-section {
 
     max-width:1200px;
@@ -447,7 +446,6 @@ label {
     padding:0 30px;
 
 }
-
 
 
 .section-header {
@@ -459,12 +457,11 @@ label {
 }
 
 
-
 .section-header a {
 
     color:#315c4c;
-    font-weight:bold;
     text-decoration:none;
+    font-weight:bold;
 
 }
 
@@ -472,18 +469,13 @@ label {
 
 .display-carousel {
 
-    display:flex;
+    display:flex !important;
+    flex-direction:row !important;
+    flex-wrap:nowrap !important;
     gap:25px;
     overflow-x:auto;
+    overflow-y:hidden;
     padding:20px 5px;
-
-}
-
-
-
-.display-carousel::-webkit-scrollbar {
-
-    height:8px;
 
 }
 
@@ -491,8 +483,7 @@ label {
 
 .carousel-card {
 
-    min-width:260px;
-    flex-shrink:0;
+    flex:0 0 260px;
 
 }
 
@@ -501,6 +492,7 @@ label {
 .carousel-image {
 
     height:320px;
+    width:260px;
     background:#ddd;
     border-radius:20px;
 
