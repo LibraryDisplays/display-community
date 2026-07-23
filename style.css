@@ -531,3 +531,83 @@ label {
     background:#ddd;
 
 }
+
+/* CAROUSEL ARROWS */
+
+
+.carousel-wrapper {
+
+    position:relative;
+    display:flex;
+    align-items:center;
+
+}
+
+
+
+.display-carousel {
+
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    gap:20px;
+    overflow:hidden;
+    width:100%;
+    scroll-behavior:smooth;
+
+}
+
+
+
+.carousel-button {
+
+    position:absolute;
+    z-index:5;
+
+    width:35px;
+    height:35px;
+
+    border-radius:50%;
+    border:none;
+
+    background:rgba(255,255,255,0.8);
+
+    color:#333;
+
+    font-size:28px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    cursor:pointer;
+
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+
+    opacity:.7;
+
+}
+
+
+
+.carousel-button:hover {
+
+    opacity:1;
+
+}
+
+
+
+.carousel-button.left {
+
+    left:10px;
+
+}
+
+
+
+.carousel-button.right {
+
+    right:10px;
+
+}
