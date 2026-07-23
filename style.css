@@ -1221,3 +1221,9 @@ grid-template-columns:1fr;
     margin-top:80px;
 
 }
+
+.creator-profile {
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+
+}
