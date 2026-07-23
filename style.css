@@ -931,3 +931,11 @@ height:400px;
 
 
 }
+
+.display-link{
+
+    text-decoration:none;
+    color:inherit;
+    display:block;
+
+}
