@@ -194,3 +194,38 @@ input {
 input[type="text"] {
     width:90%;
 }
+
+.tagline {
+    font-size:22px;
+}
+
+
+.featured-banner {
+
+    background:white;
+    margin:30px;
+    padding:40px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+
+}
+
+
+.featured-banner a {
+
+    display:inline-block;
+    margin-top:20px;
+    background:#315c4c;
+    color:white;
+    padding:15px 25px;
+    border-radius:25px;
+    text-decoration:none;
+
+}
+
+.featured-banner a:hover {
+
+    opacity:0.8;
+
+}
