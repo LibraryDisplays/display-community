@@ -1,6 +1,10 @@
 ---
 title: Haunted Library
 
+image: haunted-library.jpg
+
+thumbnail: haunted-library-thumb.jpg
+
 library: Example Public Library
 
 creator: Library Staff
@@ -25,10 +29,3 @@ likes: 42
 
 comments: 8
 ---
-
-# Haunted Library
-
-This display transforms the library into a spooky reading destination.
-
-It combines handmade decorations, creative lighting, and themed books
-to encourage readers to explore horror and mystery titles.
