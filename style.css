@@ -1,4 +1,6 @@
-/* GENERAL PAGE STYLE */
+/* =========================
+   GENERAL PAGE STYLE
+========================= */
 
 body {
 
@@ -28,7 +30,7 @@ h1 {
 
 h2 {
 
-    margin-top:40px;
+    margin-top:45px;
 
 }
 
@@ -43,7 +45,7 @@ h3 {
 .tagline {
 
     font-size:22px;
-    max-width:700px;
+    max-width:750px;
     margin:auto;
 
 }
@@ -52,7 +54,9 @@ h3 {
 
 
 
-/* NAVIGATION */
+/* =========================
+   NAVIGATION
+========================= */
 
 nav {
 
@@ -84,11 +88,13 @@ nav a:hover {
 
 
 
-/* MAIN CONTENT */
+/* =========================
+   MAIN CONTENT
+========================= */
 
 .display-page {
 
-    max-width:1100px;
+    max-width:1200px;
     margin:auto;
     padding:30px;
 
@@ -96,12 +102,28 @@ nav a:hover {
 
 
 
-.card {
 
-    background:white;
-    border-radius:20px;
-    padding:20px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-section {
+
+    text-align:center;
+    margin:30px 0;
+
+}
+
+
+input[type="text"] {
+
+    width:70%;
+    max-width:650px;
+    padding:15px 20px;
+    border-radius:30px;
+    border:1px solid #ccc;
+    font-size:16px;
 
 }
 
@@ -109,7 +131,45 @@ nav a:hover {
 
 
 
-/* FEATURED HOMEPAGE BANNER */
+/* =========================
+   TAGS
+========================= */
+
+.tags {
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:30px;
+
+}
+
+
+.tag {
+
+    background:#315c4c;
+    color:white;
+    padding:8px 16px;
+    border-radius:20px;
+    text-decoration:none;
+    font-size:14px;
+
+}
+
+
+.tag:hover {
+
+    opacity:.8;
+
+}
+
+
+
+
+
+/* =========================
+   FEATURED HOMEPAGE
+========================= */
 
 .featured-banner {
 
@@ -147,78 +207,9 @@ nav a:hover {
 
 
 
-/* SEARCH */
-
-.search-section {
-
-    text-align:center;
-    margin:30px 0;
-
-}
-
-
-input[type="text"] {
-
-    width:70%;
-    max-width:600px;
-    padding:15px;
-    border-radius:25px;
-    border:1px solid #ccc;
-    font-size:16px;
-
-}
-
-
-
-
-
-/* TAGS */
-
-.tags {
-
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-
-}
-
-
-.tag {
-
-    background:#315c4c;
-    color:white;
-    padding:8px 15px;
-    border-radius:20px;
-    text-decoration:none;
-    display:inline-block;
-    font-size:14px;
-
-}
-
-
-.tag:hover {
-
-    opacity:.8;
-
-}
-
-
-
-
-
-/* FILTER AREA */
-
-.filter-group {
-
-    margin-bottom:30px;
-
-}
-
-
-
-
-
-/* PINTEREST STYLE DISPLAY GRID */
+/* =========================
+   PINTEREST STYLE BROWSE
+========================= */
 
 .pinterest-grid {
 
@@ -231,40 +222,74 @@ input[type="text"] {
 
 .display-card {
 
-    background:white;
-    border-radius:20px;
-    padding:15px;
     margin-bottom:25px;
-    display:inline-block;
-    width:100%;
-    box-sizing:border-box;
-    box-shadow:0 4px 12px rgba(0,0,0,0.1);
     break-inside:avoid;
+    overflow:hidden;
+    border-radius:20px;
 
 }
 
 
-.display-card:hover {
 
-    transform:translateY(-3px);
-    transition:.2s;
+.display-card a {
+
+    text-decoration:none;
 
 }
-
-
 
 
 
 .display-image {
 
-    height:280px;
+    height:350px;
     background:#ddd;
-    border-radius:15px;
+    border-radius:20px;
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-bottom:15px;
-    font-size:20px;
+    position:relative;
+    overflow:hidden;
+
+}
+
+
+
+.overlay {
+
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,0.55);
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    flex-direction:column;
+
+    padding:25px;
+
+    opacity:0;
+
+    transition:.3s;
+
+}
+
+
+
+.display-image:hover .overlay {
+
+    opacity:1;
+
+}
+
+
+
+.overlay h3 {
+
+    color:white;
+    margin:0;
+    font-size:24px;
+    text-align:center;
 
 }
 
@@ -272,7 +297,20 @@ input[type="text"] {
 
 
 
-/* DISPLAY PAGE INFORMATION */
+/* =========================
+   DISPLAY DETAIL PAGES
+========================= */
+
+.card {
+
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom:25px;
+
+}
+
 
 .info-grid {
 
@@ -281,7 +319,6 @@ input[type="text"] {
     gap:20px;
 
 }
-
 
 
 .reactions {
@@ -293,14 +330,21 @@ input[type="text"] {
 }
 
 
+
+
+
+/* =========================
+   BUTTONS
+========================= */
+
 button {
 
-    padding:12px 20px;
+    padding:12px 22px;
     border:none;
     border-radius:25px;
-    cursor:pointer;
     background:#315c4c;
     color:white;
+    cursor:pointer;
 
 }
 
@@ -315,7 +359,9 @@ button:hover {
 
 
 
-/* SUBMISSION FORM */
+/* =========================
+   SUBMISSION PAGE
+========================= */
 
 textarea {
 
@@ -324,6 +370,13 @@ textarea {
     border-radius:10px;
     border:1px solid #ccc;
     font-family:Arial;
+
+}
+
+
+input[type="text"] {
+
+    box-sizing:border-box;
 
 }
 
@@ -337,9 +390,26 @@ label {
 
 
 
-/* MOBILE */
 
-@media(max-width:800px) {
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px) {
+
+
+    .pinterest-grid {
+
+        columns:2;
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px) {
 
 
     .pinterest-grid {
@@ -363,78 +433,5 @@ label {
 
     }
 
-}
-
-.display-card {
-
-    position:relative;
-    overflow:hidden;
-
-}
-
-
-.display-card a {
-
-    text-decoration:none;
-
-}
-
-
-.display-image {
-
-    height:350px;
-    background:#ddd;
-    border-radius:20px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    position:relative;
-    overflow:hidden;
-
-}
-
-
-
-.overlay {
-
-    position:absolute;
-    bottom:0;
-    left:0;
-    right:0;
-
-    background:rgba(0,0,0,0.65);
-
-    color:white;
-
-    padding:20px;
-
-    opacity:0;
-
-    transition:.3s;
-
-}
-
-
-
-.display-image:hover .overlay {
-
-    opacity:1;
-
-}
-
-
-
-.overlay h3 {
-
-    margin:0;
-    color:white;
-
-}
-
-
-
-.overlay p {
-
-    margin:5px 0 0;
 
 }
